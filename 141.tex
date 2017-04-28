@@ -316,7 +316,7 @@ int sumAux(int[] a, int i)
 	} else {
 		// MID: $\color{grey}\mathtt{a} \approx \mathtt{a_0} \land \mathtt{a} \neq \mathtt{null} \land 0 \leq \mathtt{i} < \mathtt{a.length}$
 		int val = a[i] + sumAux(a, i+1);
-		// MID: $\color{grey}\mathtt{a} \approx \mathtt{a_0} \land \mathtt{val} = \mathtt{a}[\mathtt{i}..\mathtt{a.length})$
+		// MID: $\color{grey}\mathtt{a} \approx \mathtt{a_0} \land \mathtt{val} = \sum \mathtt{a}[\mathtt{i}..\mathtt{a.length})$
 		return val;
 	}
 }
